@@ -1,0 +1,239 @@
+/* ============================================================
+   POLICES & CONFIGURATION GÉNÉRALE
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Plus+Jakarta+Sans:wght@400;500&family=Quicksand:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #faf7f5;
+    /* Votre couleur de fond d'origine */
+    color: #333;
+}
+
+/* ============================================================
+   EN-TÊTE / BARRE DE NAVIGATION (HEADER)
+   ============================================================ */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    height: 50px;
+    object-fit: contain;
+    border-radius: 8px;
+    /* Coins arrondis pour le logo */
+}
+
+.h-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.h-links a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.h-links a:hover {
+    color: #e27d60;
+}
+
+/* Boutons globaux */
+.btm {
+    background-color: #e27d60;
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 25px;
+    /* Forme arrondie pilule */
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btm:hover {
+    background-color: #d06b4e;
+    transform: translateY(-2px);
+}
+
+/* ============================================================
+   SECTION D'ACCUEIL (LANDING PAGE / HERO)
+   ============================================================ */
+.lp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    min-height: 80vh;
+}
+
+.left_side {
+    max-width: 50%;
+}
+
+.left_side span {
+    color: #e27d60;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+}
+
+.left_side h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 15px 0;
+    color: #2b2b2b;
+}
+
+.left_side p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Barre de recherche avec coins arrondis */
+.search {
+    display: flex;
+    gap: 10px;
+    background: #ffffff;
+    padding: 6px 10px;
+    border-radius: 30px;
+    /* Contour très arrondi pour le champ de recherche */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 400px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    flex-grow: 1;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.right_side img {
+    width: 450px;
+    border-radius: 24px;
+    /* Coins arrondis marqués pour la grande image */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================================
+   SECTION DES MEILLEURES VENTES (BESTSELLERS)
+   ============================================================ */
+.trending_cont {
+    padding: 60px 80px;
+}
+
+.trending_cont>span {
+    color: #888;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.trendinghead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 40px 0;
+}
+
+.trendinghead h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+}
+
+/* Grille des cartes produits */
+.trendingcards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* Cartes produits avec border-radius et vos couleurs d'origine */
+.cards {
+    background: #ffffff;
+    /* Fond blanc d'origine pour vos cartes */
+    border-radius: 20px;
+    /* Coins arrondis élégants pour les cartes */
+    overflow: hidden;
+    /* Permet d'arrondir aussi l'image supérieure */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.cards .thumb {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    /* Ajustement de l'image aux coins de la carte */
+    border-top-right-radius: 20px;
+}
+
+.cardinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.cardname p {
+    font-size: 12px;
+    color: #999;
+}
+
+.cardname h3 {
+    font-size: 16px;
+    color: #333;
+    margin-top: 2px;
+}
+
+.cardinfo img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    /* Image miniature circulaire */
+}
+
+/* ============================================================
+   PIED DE PAGE (FOOTER)
+   ============================================================ */
+.footerContainer {
+    background-color: #ffffff;
+    /* Fond blanc d'origine */
+    border-top: 1px solid #eee;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top-left-radius: 15px;
+    /* Légère courbure sur le haut du footer */
+    border-top-right-radius: 15px;
+}
+
+.footer p {
+    color: #888;
+    font-size: 14px;
+}
